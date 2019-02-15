@@ -1,0 +1,14 @@
+D:\Web API\H_Plus_Sports\H_Plus_Sports\bin\Debug\netcoreapp2.1\H_Plus_Sports.deps.json
+D:\Web API\H_Plus_Sports\H_Plus_Sports\bin\Debug\netcoreapp2.1\H_Plus_Sports.runtimeconfig.json
+D:\Web API\H_Plus_Sports\H_Plus_Sports\bin\Debug\netcoreapp2.1\H_Plus_Sports.runtimeconfig.dev.json
+D:\Web API\H_Plus_Sports\H_Plus_Sports\bin\Debug\netcoreapp2.1\H_Plus_Sports.dll
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.csprojAssemblyReference.cache
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.csproj.CoreCompileInputs.cache
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.RazorAssemblyInfo.cache
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.RazorAssemblyInfo.cs
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.AssemblyInfoInputs.cache
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.AssemblyInfo.cs
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.RazorTargetAssemblyInfo.cache
+D:\Web API\H_Plus_Sports\H_Plus_Sports\bin\Debug\netcoreapp2.1\H_Plus_Sports.pdb
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.dll
+D:\Web API\H_Plus_Sports\H_Plus_Sports\obj\Debug\netcoreapp2.1\H_Plus_Sports.pdb
