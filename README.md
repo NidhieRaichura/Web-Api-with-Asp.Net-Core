@@ -13,7 +13,7 @@ Sample Web API built with Asp.Net core, configured with entity framework core an
        4. Upload the backpack file and select it 
        5. Storage Set is ready for Import database
        6. Copy connection string
-   ##### (Security issues in Azure that will not allow outside access to database) 
+   ##### (Security issues in Azure will not allow outside access to database) 
 	4. Set Firewall settings to allow outside access     
 	   1. Set Firewall settings > Add Client IP (Sets a rule based on current IP address)
     
