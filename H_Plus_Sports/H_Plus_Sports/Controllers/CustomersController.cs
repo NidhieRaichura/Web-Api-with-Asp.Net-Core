@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using H_Plus_Sports.Models;
 using Microsoft.AspNetCore.Http;
@@ -19,22 +20,44 @@ namespace H_Plus_Sports.Controllers
         {
             _context = context;
         }
+
+        private bool CustomerExists(int id)
+        {
+            return _context.Customer.Any(c => c.CustomerId == id);
+        }
         [HttpGet]
         public IActionResult GetCustomer()
         {
-            return new ObjectResult(_context.Customer);
+            var results = new ObjectResult(_context.Customer)
+            {
+                StatusCode = (int)HttpStatusCode.OK
+            };
+            Request.HttpContext.Response.Headers.Add("X-Total-Count", _context.Customer.Count().ToString());
+            return results;
         }
 
         [HttpGet("{id}", Name = "GetCustomer")]
         public async Task<IActionResult> GetCustomer([FromRoute] int id)
         {
-            var customer = await _context.Customer.SingleOrDefaultAsync(m => m.CustomerId == id);
-            return new ObjectResult(customer);
+            if (CustomerExists(id))
+            {
+                var customer = await _context.Customer.SingleOrDefaultAsync(m => m.CustomerId == id);
+                return new ObjectResult(customer);
+            }
+            else
+            {
+                return NotFound();
+            }
+           
         }
 
         [HttpPost]
         public async Task<IActionResult> PostCustomer([FromBody] Customer customer)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             _context.Customer.Add(customer);
             await _context.SaveChangesAsync();
             return CreatedAtAction("GetCustomer", new { id = customer.CustomerId});
