@@ -21,3 +21,15 @@ Sample Web API built with Asp.Net core, configured with entity framework core an
 ##### Create tables as given in the DB by scaffolding with the following command in NuGet Package Manager Console
 
 `Scaffold-DbContext "Server=<server> Catalog=H_Plus_Sports;Persist Security Info=False;User ID=<userid>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models`
+
+### Model Binding :- Get information from the routes and from the HTTP call into actions
+##### Attributes for model binding
+
+	1. [BindRequired] - required; if not found in the route or HTTP request, an error will be logged in the model state
+	2. [BindNever] - never bind the associated parameter
+	3. [FromHeader] - specify the exact binding to apply
+	4. [FromRoute] - binding to a variable is sent across the route
+	5. [FromServices] - bind objects injected inside the project through startup
+	6. [FromBody] -  bind content located inside request body
+
+
