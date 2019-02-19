@@ -23,8 +23,7 @@ Sample Web API built with Asp.Net core, configured with entity framework core an
 `Scaffold-DbContext "Server=<server> Catalog=H_Plus_Sports;Persist Security Info=False;User ID=<userid>;Password=<password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models`
 
 ### Model Binding :- Get information from the routes and from the HTTP call into actions
-##### Attributes for model binding
-
+##### Binding Attributes
 	1. [BindRequired] - required; if not found in the route or HTTP request, an error will be logged in the model state
 	2. [BindNever] - never bind the associated parameter
 	3. [FromHeader] - specify the exact binding to apply
@@ -32,4 +31,12 @@ Sample Web API built with Asp.Net core, configured with entity framework core an
 	5. [FromServices] - bind objects injected inside the project through startup
 	6. [FromBody] -  bind content located inside request body
 
+### Model Validation :- To make sure any critical data sent to the Web API is not a threat by _validation of incoming data from the API saved to the database_
+Namespace:- `using System.ComponentModel.DataAnnotations`
+##### Validation Attributes
 
+	1. [Required] - incoming field cannot be empty
+	2. [DataType(DataType.<_type_>)] - specify the type of data; ex: [DataType(DataType.Date)]
+	3. [EmailAddress] - regex of email; else throws error to model state
+	4. [Phone]
+	5. [StringLength(50)] - specify the number of characters in string; catches error at API level before hitting the DB
