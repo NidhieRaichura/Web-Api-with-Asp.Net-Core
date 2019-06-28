@@ -6,11 +6,11 @@ Sample Web API built with Asp.Net core, configured with entity framework core an
 	2. Create a storage account
        1. All Services > Storage Accounts > add a new storage account
    ##### (You need to have backup files from existing tables that are created in SQL Server for the following step)
-	3. Create a container for backpack files (backup files)
+	3. Create a container for bacpac files (backup files)
        1. Open the SQL server > Import Database
        2. Select Storage account
-       3. Add or select a Container to hold the backpack file
-       4. Upload the backpack file and select it 
+       3. Add or select a Container to hold the bacpac file
+       4. Upload the bacpac file and select it 
        5. Storage Set is ready for Import database
        6. Copy connection string
    ##### (Security issues in Azure will not allow outside access to database) 
